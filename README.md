@@ -48,10 +48,6 @@ Open http://127.0.0.1:5000. Register one Individual account and one Business acc
 
 The scanner requires `google-genai`. Without a key, it returns a clear configuration error; manual inventory entry still works. The model is instructed not to infer expiry dates from manufacturing/packing dates or ambiguous date strings. Always review scan results.
 
-## Elasticsearch setup (optional)
-
-Set `ELASTICSEARCH_URL`, and optionally `ELASTICSEARCH_API_KEY`, in `.env`. If Elastic is not configured or unavailable, the app falls back to local SQLite-backed keyword matching. The integration currently indexes and searches surplus listings; it is not a generative model or a predictive forecasting engine.
-
 ## PayPal Sandbox setup
 
 1. Create a REST app in the PayPal Developer Dashboard Sandbox.
